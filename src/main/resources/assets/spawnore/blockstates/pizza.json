@@ -1,0 +1,11 @@
+{
+    "variants": {
+        "bites=0": { "model": "spawnore:pizza" },
+        "bites=1": { "model": "spawnore:pizza_slice1" },
+        "bites=2": { "model": "spawnore:pizza_slice2" },
+        "bites=3": { "model": "spawnore:pizza_slice3" },
+        "bites=4": { "model": "spawnore:pizza_slice4" },
+        "bites=5": { "model": "spawnore:pizza_slice5" },
+        "bites=6": { "model": "spawnore:pizza_slice6" }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "mob.stinky.hurt":
+    {
+        "category": "neutral",
+        "sounds":
+        [
+            "spawnore:mob/stinky/hurt/duck_hurt"
+        ]
+    },
+	"mob.stinky.death":
+    {
+        "category": "neutral",
+        "sounds":
+        [
+            "spawnore:mob/stinky/death/death"
+        ]
+    }
+}
