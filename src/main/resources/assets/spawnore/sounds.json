@@ -7,12 +7,30 @@
             "spawnore:mob/stinky/hurt/duck_hurt"
         ]
     },
-	"mob.stinky.death":
+    "mob.stinky.death":
     {
         "category": "neutral",
         "sounds":
         [
             "spawnore:mob/stinky/death/death"
+        ]
+    },
+    "mob.waterdragon.hurt":
+    {
+        "category": "neutral",
+        "sounds":
+        [
+            "spawnore:mob/waterdragon/waterdragon_hurt1",
+	    "spawnore:mob/waterdragon/waterdragon_hurt2",
+	    "spawnore:mob/waterdragon/waterdragon_hurt3"
+        ]
+    },
+    "mob.waterdragon.death":
+    {
+        "category": "neutral",
+        "sounds":
+        [
+            "spawnore:mob/waterdragon/waterdragon_death"
         ]
     }
 }
