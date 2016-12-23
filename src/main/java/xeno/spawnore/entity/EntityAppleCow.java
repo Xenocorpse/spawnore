@@ -12,7 +12,7 @@ import xeno.spawnore.SpawnOre;
 
 public class EntityAppleCow extends EntityCow {
 	
-	public static final ResourceLocation APPLECOW_DROPS = new ResourceLocation(SpawnOre.MODID+":applecow");
+	public static final ResourceLocation APPLECOW_DROPS = new ResourceLocation(SpawnOre.MODID+":entities/applecow");
 
 	public EntityAppleCow(World worldIn) {
 		super(worldIn);
@@ -36,7 +36,7 @@ public class EntityAppleCow extends EntityCow {
 	
 	@Override
     protected ResourceLocation getLootTable() {
-        return LootTableList.ENTITIES_COW;
+        return APPLECOW_DROPS;
     }
 
 }

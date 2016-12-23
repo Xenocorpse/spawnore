@@ -30,7 +30,7 @@ import xeno.spawnore.SpawnOre;
 
 public class EntityGoldenAppleCow extends EntityCow{
 	
-	public static final ResourceLocation DROPS = new ResourceLocation(SpawnOre.MODID+":goldencow");
+	public static final ResourceLocation DROPS = new ResourceLocation(SpawnOre.MODID+":entities/goldencow");
 
 	public EntityGoldenAppleCow(World worldIn) {
 		super(worldIn);
@@ -53,7 +53,7 @@ public class EntityGoldenAppleCow extends EntityCow{
     }
 	
     protected ResourceLocation getLootTable() {
-        return LootTableList.ENTITIES_COW;
+        return DROPS;
     }
 
 }

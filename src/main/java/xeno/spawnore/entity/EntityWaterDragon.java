@@ -1,5 +1,7 @@
 package xeno.spawnore.entity;
 
+import javax.annotation.Nullable;
+
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
@@ -34,6 +36,7 @@ public class EntityWaterDragon extends EntityMob {
 	
 	public static final ResourceLocation hurt = new ResourceLocation(SpawnOre.MODID + ":mob.waterdragon.hurt");
 	public static final ResourceLocation death = new ResourceLocation(SpawnOre.MODID + ":mob.waterdragon.death");
+	public static final ResourceLocation LOOT = new ResourceLocation(SpawnOre.MODID + ":entities/waterdragon");
 	
 	public static int randomDrops;
 	
@@ -64,6 +67,11 @@ public class EntityWaterDragon extends EntityMob {
 	protected void applyEntityAI()
     {
         this.targetTasks.addTask(1, new EntityAINearestAttackableTarget(this, EntityPlayer.class, true));
+    }
+	
+	@Override
+    protected ResourceLocation getLootTable() {
+        return LOOT;
     }
 	
 	@Override

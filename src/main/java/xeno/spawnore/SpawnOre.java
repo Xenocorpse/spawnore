@@ -10,7 +10,6 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import xeno.spawnore.client.SpawnOreTabs;
 import xeno.spawnore.init.RegisterEntities;
-import xeno.spawnore.init.RegisterLootTables;
 import xeno.spawnore.init.SpawnOreBlocks;
 import xeno.spawnore.init.SpawnOreItems;
 import xeno.spawnore.item.ItemArmor;
@@ -52,7 +51,6 @@ public class SpawnOre {
     
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event) {
-    	RegisterLootTables.init();
     	System.out.println(NAME + " version " + VERSION + " is loaded!");
     }
     
