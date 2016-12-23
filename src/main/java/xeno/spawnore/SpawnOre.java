@@ -8,6 +8,7 @@ import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import xeno.spawnore.client.SpawnOreTabs;
 import xeno.spawnore.init.RegisterEntities;
 import xeno.spawnore.init.SpawnOreBlocks;
@@ -18,6 +19,7 @@ import xeno.spawnore.recipe.DriedRecipe;
 import xeno.spawnore.recipe.Shaped;
 import xeno.spawnore.recipe.Shapeless;
 import xeno.spawnore.recipe.Smelting;
+import xeno.spawnore.world.SpawnOreWorldGen;
 
 @Mod(modid = SpawnOre.MODID, name = SpawnOre.NAME, version = SpawnOre.VERSION, acceptedMinecraftVersions = "[1.10.2, 1.11]")
 public class SpawnOre {
@@ -39,6 +41,7 @@ public class SpawnOre {
     	SpawnOreItems.init();
     	RegisterEntities.init();
     	RegisterEntities.initModels();
+    	GameRegistry.registerWorldGenerator(new SpawnOreWorldGen(), 3);
     }
     
     @Mod.EventHandler

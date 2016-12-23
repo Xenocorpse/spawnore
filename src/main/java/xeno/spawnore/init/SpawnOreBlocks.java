@@ -81,6 +81,8 @@ public class SpawnOreBlocks {
 	public static BlockBase orepolarbear;
 	public static BlockBase oreapplecow;
 	public static BlockBase oregoldencow;
+	public static BlockBase oreenchantedcow;
+	public static BlockBase orewaterdragon;
 	
 	public static void init() {
 		oreamethyst = register(new BlockGem("oreamethyst", SpawnOreItems.itemamethyst, 1, 0, SoundType.STONE).setCreativeTab(SpawnOre.tabspawnore));
@@ -142,6 +144,8 @@ public class SpawnOreBlocks {
 		orepolarbear = (BlockBase) register(new BlockBase(Material.GROUND, "orepolarbear", "shovel", 0, SoundType.GROUND).setHardness(3f).setResistance(4f).setCreativeTab(SpawnOre.tabspawnore));
 		oreapplecow = (BlockBase) register(new BlockBase(Material.GROUND, "oreapplecow", "shovel", 0, SoundType.GROUND).setHardness(3f).setResistance(4f).setCreativeTab(SpawnOre.tabspawnore));
 		oregoldencow = (BlockBase) register(new BlockBase(Material.GROUND, "oregoldencow", "shovel", 0, SoundType.GROUND).setHardness(3f).setResistance(4f).setCreativeTab(SpawnOre.tabspawnore));
+		oreenchantedcow = (BlockBase) register(new BlockBase(Material.GROUND, "oreenchantedcow", "shovel", 0, SoundType.GROUND).setHardness(3f).setResistance(4f).setCreativeTab(SpawnOre.tabspawnore));
+		orewaterdragon = (BlockBase) register(new BlockBase(Material.GROUND, "orewaterdragon", "shovel", 0, SoundType.GROUND).setHardness(3f).setResistance(4f).setCreativeTab(SpawnOre.tabspawnore));
 	}
 	
 	private static <T extends Block> T register(T block, ItemBlock itemBlock) {

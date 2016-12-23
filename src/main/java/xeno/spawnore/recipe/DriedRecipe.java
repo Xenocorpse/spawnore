@@ -160,6 +160,14 @@ public static void init() {
 		ItemStack goldencow = new ItemStack(Items.SPAWN_EGG);
 		applyEntityIdToItemStack(goldencow, "spawnore.goldencow");
 		GameRegistry.addShapelessRecipe(goldencow, SpawnOreBlocks.oregoldencow, Items.WATER_BUCKET.setContainerItem(Items.BUCKET));
+		
+		ItemStack enchantedcow = new ItemStack(Items.SPAWN_EGG);
+		applyEntityIdToItemStack(enchantedcow, "spawnore.enchantedcow");
+		GameRegistry.addShapelessRecipe(enchantedcow, SpawnOreBlocks.oreenchantedcow, Items.WATER_BUCKET.setContainerItem(Items.BUCKET));
+		
+		ItemStack waterdragon = new ItemStack(Items.SPAWN_EGG);
+		applyEntityIdToItemStack(waterdragon, "spawnore.waterdragon");
+		GameRegistry.addShapelessRecipe(waterdragon, SpawnOreBlocks.orewaterdragon, Items.WATER_BUCKET.setContainerItem(Items.BUCKET));
 
 	}
 	
