@@ -47,12 +47,12 @@ public class RegisterEntities {
 		register(EntityStinky.class, "stinky");
 		register(EntityRayBullet.class, "raybullet");
 		register(EntityWaterDragon.class, "waterdragon");
-		register(EntityEnchantedGoldenAppleCow.class, "enchantedcow");
+		//register(EntityEnchantedGoldenAppleCow.class, "enchantedcow");
 		
 		// Spawn Eggs
 		registerSpawnEgg(EntityGoldenAppleCow.class, 15720061, 16167425);
 		registerSpawnEgg(EntityAppleCow.class, 10489616, 16167425);
-		registerSpawnEgg(EntityEnchantedGoldenAppleCow.class, 13107400, 16167425);
+		//registerSpawnEgg(EntityEnchantedGoldenAppleCow.class, 13107400, 16167425);
 		registerSpawnEgg(EntityStinky.class, 12623485, 12623485);
 		registerSpawnEgg(EntitySnowman.class, 15921906, 16167425);
 		registerSpawnEgg(EntityIronGolem.class, 15921906, 52);
@@ -67,12 +67,12 @@ public class RegisterEntities {
 		EntityRegistry.addSpawn(EntityStinky.class, 100, 1, 3, EnumCreatureType.CREATURE, nether);
 		EntityRegistry.addSpawn(EntityAppleCow.class, 100, 2, 5, EnumCreatureType.CREATURE, plains);
 		EntityRegistry.addSpawn(EntityGoldenAppleCow.class, 85, 2, 5, EnumCreatureType.CREATURE, plains);
-		EntityRegistry.addSpawn(EntityEnchantedGoldenAppleCow.class, 50, 2, 5, EnumCreatureType.CREATURE, plains);
+		//EntityRegistry.addSpawn(EntityEnchantedGoldenAppleCow.class, 50, 2, 5, EnumCreatureType.CREATURE, plains);
 		
 		// Register Loot Tables
 		LootTableList.register(EntityAppleCow.APPLECOW_DROPS);
 		LootTableList.register(EntityGoldenAppleCow.DROPS);
-		LootTableList.register(EntityEnchantedGoldenAppleCow.DROPS);
+		//LootTableList.register(EntityEnchantedGoldenAppleCow.DROPS);
 		LootTableList.register(EntityWaterDragon.LOOT);
 		
 	}
